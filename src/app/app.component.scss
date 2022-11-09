@@ -1,0 +1,12 @@
+.item {
+  cursor: pointer;
+  color: blue;
+}
+
+.item:hover {
+  text-decoration: underline;
+}
+
+:host ::ng-deep .mat-list-item {
+  height: 120px !important;
+}
