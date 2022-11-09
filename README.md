@@ -27,7 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## To get the Reddit API access token
-I used this tutorial found on https://rymur.github.io/setup
+I used this tutorial found on https://rymur.github.io/setup \
 Got my auth username and password from https://www.reddit.com/prefs/apps
 ```js
 var request = require("request");
