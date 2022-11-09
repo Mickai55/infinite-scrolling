@@ -28,6 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## To get the Reddit API access token
 I used this tutorial found on https://rymur.github.io/setup
+Got my auth username and password from https://www.reddit.com/prefs/apps
 ```js
 var request = require("request");
 
