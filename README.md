@@ -25,3 +25,29 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## To get the Reddit API access token
+I used this tutorial found on https://rymur.github.io/setup
+```js
+var request = require("request");
+
+var options = {
+    url: "https://www.reddit.com/api/v1/access_token",
+    method: 'POST',
+    contentType: 'application/x-www-form-urlencoded',
+    headers: {
+      'User-Agent': 'YOUR_USER_AGENT'
+    },
+    auth: {
+      'username': 'YOUR_AUTH_USERNAME',
+      'password': 'YOUR_AUTH_PASSWORD'
+    },
+    body: 'grant_type=password&username=YOUR_REDDIT_USERNAME&password=YOUR_REDDIT_PASSWORD',
+  };
+
+request(options, function(err, res, body) {
+    var json = JSON.parse(body);
+    var token = json['access_token'];
+    console.log(token) // YOUR_ACCESS_TOKEN
+});
+```
